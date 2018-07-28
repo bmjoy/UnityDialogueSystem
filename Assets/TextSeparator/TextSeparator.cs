@@ -22,7 +22,7 @@ public class TextSeparator : MonoBehaviour {
             myText.alignment = TextAnchor.LowerCenter;
             myText.font = font;
             myText.material = material;
-            myText.GetComponent<RectTransform>().localPosition = new Vector3(parentTransform.localPosition.x , parentTransform.localPosition.y, myText.rectTransform.localPosition.z);
+            myText.GetComponent<RectTransform>().localPosition = new Vector3(parentTransform.localPosition.x +i*20, parentTransform.localPosition.y, myText.rectTransform.localPosition.z);
             myText.fontSize = 40;
             myText.color = new Color(1f, 0.0f, 0.0f,1.0f);
 
